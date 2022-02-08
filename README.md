@@ -5,6 +5,8 @@ A Java-FX interface to help visualize pathfinding algorithms
 The app displays pathfinding algorithms in a grid map in an animation.  
 An MVP model was used to code the app ( Model, View, Presenter).
 
+![App Demo](https://github.com/ZarakiRage0/PathfindingVisualizer/blob/main/pathfindingVisualizer.gif)
+
 # Graph
 The graph is a 2D grid map. 
 Each node is represented by its cordinates (x,y) and its type ( Start, Goal, Empty, Wall ...).  
