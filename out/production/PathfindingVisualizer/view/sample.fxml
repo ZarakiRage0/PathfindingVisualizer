@@ -1,19 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
    <children>
-      <Label alignment="CENTER" layoutX="417.0" layoutY="52.0" text="Pathfinder Visualizer" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="390.0">
+      <Label alignment="CENTER" layoutX="12.0" layoutY="39.0" text="Pathfinder Visualizer" AnchorPane.bottomAnchor="606.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="768.0" AnchorPane.topAnchor="40.0">
          <font>
             <Font size="51.0" />
          </font>
       </Label>
-      <HBox layoutX="20.0" layoutY="158.0" prefHeight="100.0" prefWidth="1230.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="460.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="151.0" prefHeight="67.0" prefWidth="1240.0" spacing="20.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="494.6" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Label alignment="CENTER" text="Start">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff421f" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" text="Goal">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff2e" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" text="Wall">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" text="Unvisited">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" text="Visited">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" text="Path">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#faff21" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+               </graphic>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding></HBox>
       <Pane fx:id="idMapGrid" layoutX="20.0" layoutY="280.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="280.0" />
+      <Button fx:id="idStart" layoutX="572.0" layoutY="46.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="90.0" text="start" AnchorPane.bottomAnchor="616.0" AnchorPane.leftAnchor="590.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <ChoiceBox layoutX="947.0" layoutY="59.0" prefWidth="150.0" />
+      <Button fx:id="idClear" layoutX="767.0" layoutY="49.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="114.0" text="clear">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
